@@ -68,12 +68,16 @@
     color: rgb(243, 105, 202,1) !important;
 }
 
+.dropdown-toggle::after{
+    display:none !important;
+}
+
 #lin:hover{
     transition:0.2s;
     color: rgb(0, 167, 209) !important;
 }
 .dropdown:hover .dropdown-menu{
-    display: none;
+    display: block;
 }
 
 .dropdown-item{
