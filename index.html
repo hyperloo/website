@@ -1,9 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bring It ONN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="web.css">
+	<link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+	
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<div id="home">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#"><h2>tekhin <sub><sub>ver.</sub></sub> 1</h2></a>
+	
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#gallery">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+					<form class="form-inline dropdown d-none d-md-block my-2 my-lg-3 mx-5">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-globe" style="font-size: 35px;"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item " href="#" id="fa"><i class="fab fa-facebook"></i></a>
+							<a class="dropdown-item" href="#" id="ins"><i class="fab fa-instagram"></i></a>
+							<a class="dropdown-item" href="#" id="lin"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<video autoplay muted loop id="myVideo" class="d-block d-lg-none">
+				<source src="images/Black And White Video Of Man Infront Of The Computer.mp4" class="video" type="video/mp4">
+		</video>
+
+		<video autoplay muted loop id="myVideo" class="d-none d-lg-block">
+			<source src="images/Video Of Man Scrolling Down And Typing.mp4" class="video" type="video/mp4">
+		</video>
+
+		<div class="container">
+			<p>SUCCESS IS A JOURNEY NOT A DESTINATION</p>			
+		</div>
+		
+	</div>
+
+
+	<div class="about"></div>
+	
+	<div class="portfolio"></div>
+	
+	<div class="gallery"></div>
+	
+	<div class="contact"></div>
+	
+	
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+	<script src="js/jqueryeasing.js"></script>
+	<script src="js/smooth.js"></script>
+	<script src="web.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 </body>
 </html>
