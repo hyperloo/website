@@ -95,16 +95,26 @@
     filter: blur(2px);
 }
 
-.container p{
+.container .row .col-10, .col-1 {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.col-1{
+    height:100vh !important;
+}
+.container .row .col-10 p{
     font-family: 'EB Garamond', serif;
     text-align: center;
     font-weight: bold;
     position: fixed;
-    margin: calc(100vh/2.8) calc(100vw/28);
+    margin: calc(100vh/2.8) calc(100vw/35);
     background: rgba(0, 0, 0, 0);
     color: white;
     font-size:2.7rem;
-    padding: 20px;
+    letter-spacing: 2px;
+    
+    z-index: 10;
 }
 
 @media (max-width: 575.98px) {
@@ -114,9 +124,13 @@
     .nav-item{
         margin: auto !important;
     }
-    .container p{
+    .container .row .col-10 p{
         font-size:1.5rem;
-        margin: calc(100vh/4) calc(100vw/28);
+        margin-top: calc(100vh/4);
+        margin-left: calc(100vw/28);
+    }
+    .navbar{
+        background: rgba(20,31,52,0.7) !important;
     }
 }
 
@@ -128,10 +142,16 @@
     .nav-item{
         margin:auto!important;
     }
-    .container p{
-        font-size:1.8rem;
-        margin: calc(100vh/3.65) calc(100vw/28);
+    .container .row .col-10 p{
+        font-size:1.7rem;
+        margin-top: calc(100vh/3.65);
+        margin-left: auto;
     }
+    .navbar{
+        background: rgba(20,31,52,0.7) !important;
+        z-index: 100;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -139,9 +159,10 @@
     .navbar-brand{
         margin-left: -80px !important;
     }
-    .container p{
+    .container .row .col-10 p{
         font-size:2.1rem;
-        margin: calc(100vh/3.3) calc(100vw/28);
+        margin-top: calc(100vh/3.3);
+        margin-left: calc(100vw/50);
     }
 }
 
@@ -150,8 +171,9 @@
     .navbar-brand{
         margin-left:0 !important;
     }
-    .container p{
-        
+    .container .row .col-10 p{
+        font-size:2.5rem;
+        margin: calc(100vh/3) auto;
     }
 }
 
