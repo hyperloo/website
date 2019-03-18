@@ -73,7 +73,7 @@
     color: rgb(0, 167, 209) !important;
 }
 .dropdown:hover .dropdown-menu{
-    display: block;
+    display: none;
 }
 
 .dropdown-item{
