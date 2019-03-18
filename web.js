@@ -14,3 +14,7 @@ $(document).ready(function(){
 			},1250);
 		});
 });
+
+AOS.init({
+	duration: 1800,
+});

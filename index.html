@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="web.css">
 	<link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+	<link href="css/aos.css" rel="stylesheet">
 	
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -14,7 +15,7 @@
 	<div id="home">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 			<div class="container">
-				<a class="navbar-brand" href="#"><h2>tekhin <sub><sub>ver.</sub></sub> 1</h2></a>
+				<a class="navbar-brand" href="#"data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"><h2>tekhin <sub><sub>ver.</sub></sub> 1</h2></a>
 	
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -62,12 +63,17 @@
 		</video>
 
 		<div class="container">
-			<div class="row">
-				<div class="col-1 d-none"><p></p></div>
+			<div class="row" id="row1">
 				<div class="col-10">
-					<p>SUCCESS IS A JOURNEY NOT A DESTINATION<br>so KEEP GOING....</p>
+					<p>SUCCESS IS A JOURNEY NOT A DESTINATION<br>so KEEP GOING...</p>
 				</div>
-				<div class="col-1"><p></p></div>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="row" id="row2">
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4"></div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4" id="knowmore" data-aos="zoom-in-up"><button>EXPLORE MORE</button><i class="chevron bottom"></i></div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4"></div>
 			</div>			
 		</div>
 		
@@ -87,6 +93,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>	
 	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="js/jqueryeasing.js"></script>
 	<script src="js/smooth.js"></script>
 	<script src="web.js"></script>
