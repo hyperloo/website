@@ -111,7 +111,8 @@
         margin: auto !important;
     }
     .container p{
-        font-size:2rem;
+        font-size:1.5rem;
+        margin: calc(100vh/4) calc(100vw/28);
     }
 }
 
@@ -123,6 +124,10 @@
     .nav-item{
         margin:auto!important;
     }
+    .container p{
+        font-size:1.8rem;
+        margin: calc(100vh/3.65) calc(100vw/28);
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -130,12 +135,20 @@
     .navbar-brand{
         margin-left: -80px !important;
     }
+    .container p{
+        font-size:2.1rem;
+        margin: calc(100vh/3.3) calc(100vw/28);
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .navbar-brand{
         margin-left:0 !important;
+    }
+    .container p{
+        font-size:1.5rem;
+        margin: calc(100vh/3) calc(100vw/28);
     }
 }
 
