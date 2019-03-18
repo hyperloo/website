@@ -205,6 +205,9 @@
         font-size:55%;
         text-align:center;
     }
+    #knowmore button{
+        padding: 4px;
+    }
     #knowmore .chevron{
         margin: 4px !important;
         display: block;
