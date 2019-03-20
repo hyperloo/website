@@ -4,6 +4,7 @@
 
 #body{
     overflow: hidden;
+    margin-right: 0px !important;
 }
 #home nav a h2{
     text-transform:lowercase;
@@ -77,7 +78,6 @@
     filter:brightness(1.75);
 }
 
-
 #lin:hover{
     transition:0.2s;
     color: rgb(5, 182, 226) !important;
@@ -98,40 +98,21 @@
     padding-left: 17px !important;
 }
 
-.video-background {
+.video-background{
     position: relative;
-    
-    min-width: 100%; 
-    min-height: 100vh;
-    filter: blur(3px);
-    z-index: -1;
-    overflow: hidden;
-    
-}
-
-video{
-    margin-right:50px;
-    min-width: 100%;
+    width:100%;
     min-height: 100%;
-    width:auto;
-    height:auto;
+    overflow: hidden;
     object-fit: cover;
 }
 
-video::after{
-    padding:0;
-    margin:0;
+.caption{
+    position:absolute;
+    top:38%;
+    width:100%;
 }
 
-.caption .row .col-10{
-    padding: 0px !important;
-    margin: 0px !important;
-}
-
-#row2{
-    margin-top: 70px;
-}
-.caption .row .col-10 p{
+.caption p{
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     font-weight: 800;
@@ -143,27 +124,27 @@ video::after{
     font-size:2.4rem;
     letter-spacing: 2px;    
     z-index: 10;
+    text-shadow: .1em .1em .8em black;
 }
 
-.col-4 button, .col-sm-4 button, .col-md-4 button , .col-lg-4 button{
+.caption .btn button{
     z-index: 100;    
     padding:12px 15px;
     background: darkturquoise;
     color: white;
     font-family:'Fredericka the Great', cursive;
+    font-weight: bold;
     border:2px solid darkturquoise;
     -webkit-box-shadow: 11px 10px 52px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 11px 10px 52px -1px rgba(0,0,0,0.75);
     box-shadow: 11px 10px 52px -1px rgba(0,0,0,0.75);
-    
+    margin-top:30px !important;
 }
 
-.caption{
-    position:absolute !important;
-    top: 38vh !important;
-    width:100% !important;
-
+.caption .btn button:hover{
+    padding:11px 14px;
 }
+
 .chevron.bottom:before {
     top: 0;
     -webkit-transform: rotate(135deg);
@@ -179,22 +160,18 @@ video::after{
 }
 .chevron::before {
     border-style: solid;
-    border-width: 0.18em 0.18em 0 0;
+    border-width: 0.3em 0.3em 0 0;
     content: '';
     display: inline-block;
-    height: 15px;
+    height: 20px;
     position: relative;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     vertical-align: top;
-    width: 15px;
+    width: 20px;
 
 }
-#knowmore{
-    text-align: center;
-}
-
 
 @keyframes pulse{
     0% {
@@ -209,15 +186,136 @@ video::after{
 }
 
 #myname{
-    
+    padding: calc(100vh/4) calc(100vw/12.9) calc(100vh/3.7) !important;
+    background: rgb(7,106,121);
+    text-shadow: .1em .1em .8em black;
 }
+
 #hey{
     color:rgb(180, 180, 180);
     font-weight:500;
-    font-size:2rem;
+    font-size:4rem;
     font-family: 'Work Sans', sans-serif;
-    
 }
+#name{
+    font-family: 'Work Sans', sans-serif;    
+    font-weight: 800;
+    font-size:calc(100vw/14);
+    color:whitesmoke;
+}
+
+#hack{
+    color:#EEC848 !important;
+    font-size:26px;
+}
+#myimage1{
+    background: url("images/img1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height:100vh;
+
+}
+
+.me h2{
+    font-family: 'Work Sans', sans-serif !important;
+    font-size:calc(100vw/26) !important;
+    font-weight: 800 !important;
+    color: rgb(7,106,121) !important;
+    margin-top:170px !important;
+    margin-left:120px !important;
+    text-shadow: 2px -4px 8px rgba(0,0,0,0.5);
+}
+#carouselContent{
+    margin-top:80px !important;
+    margin-left:120px;
+    margin-right: 160px;
+}
+.caraousel-item{
+    width:120px !important;
+} 
+.carousel-item p{
+    font-size: 1.4rem !important;
+    color:rgb(7,106,121);
+}
+#intropara{    
+    margin-top: -49px !important;
+    font-size: 1.4rem !important;
+    color:rgb(124, 122, 122);
+}
+.carousel-item, .carousel-inner{
+    width:75% !important;
+}
+
+.meimg{
+    position: relative;
+}
+
+
+#myimage2{
+    position: absolute;
+    display: block;
+    margin-top:110px;
+    margin-left:100px;
+    margin-right:auto;
+    width: 490px;
+    height:620px;
+    box-shadow:  -5px -10px 20px rgba(0,0,0,1);
+    z-index: 10;
+}
+#myimage3{
+    
+    left: 50px;
+    top: 50px;
+    width: 430px;
+    height:520px;
+    z-index: 1;
+    margin-top:245px;
+    margin-left:215px;
+}
+
+#resume{
+    margin-top:45px;
+    margin-left: 0 px!important;
+}
+
+#resume button {
+    background:#EEC848;
+    border: none;
+    color:	#285352;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+#resume button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#resume button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#resume button:hover span {
+    padding-right: 25px;
+}
+  
+#resume button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 
 @media (max-width: 575.98px) {
     .navbar-brand{
@@ -226,19 +324,13 @@ video::after{
     .nav-item{
         margin: auto !important;
     }
-    #row1{
-        margin-top: 0;
-    }
     .caption{
-        top:20%;
+        top:45%;
     }
-    .caption .row .col-10 p{
+    .caption p{
         font-size:1.5rem;
         margin-left: calc(100vw/28);
         margin-bottom: 0px;
-    }
-    .navbar{
-        background: rgba(20,31,52,0.7) !important;
     }
     #knowmore{
         font-size:55%;
@@ -266,9 +358,46 @@ video::after{
         width: 15px;
     
     }
+    #myname{
+        padding: calc(100vh/2.75) calc(100vw/22) calc(100vh/3.8);
+    }
+    
+    #hey{
+        font-size:2.5rem;
+    }
+    #name{
+        font-size:5rem;
+    }
+    .me h2{
+        font-family: 'Work Sans', sans-serif !important;
+        font-size:2.5rem !important;
+        font-weight: 800 !important;
+        color: rgb(7,106,121) !important;
+        margin-top:100px !important;
+        margin-left:auto;
+    }
+    #carouselContent{
+        margin-top:80px !important;
+        margin-left:60px;
+        margin-right: 40px;
+    }
+    .caraousel-item{
+        width:120px !important;
+    } 
+    .carousel-item p{
+        font-size: 1rem !important;
+        color:rgb(7,106,121);
+    }
+    #intropara{    
+        margin-top: -40px !important;
+        font-size: 1rem !important;
+        color:rgb(124, 122, 122);
+    }
+    .carousel-item, .carousel-inner{
+        width:100% !important;
+    }
 }
 
-/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
     .navbar-brand{
         margin:auto!important;
@@ -276,20 +405,13 @@ video::after{
     .nav-item{
         margin:auto!important;
     }
-    #row1{
-        margin-top:0;
-    }
     .caption{
-        top:25%;
+        top:32%;
     }
-    .caption .row .col-10 p{
+    .caption p{
         font-size:1.7rem;
         margin-left: auto;
         margin-bottom:px;
-    }
-    .navbar{
-        background: rgba(20,31,52,0.7) !important;
-        z-index: 100;
     }
     #knowmore{
         font-size:70%;
@@ -314,22 +436,58 @@ video::after{
         width: 15px;
     
     }
-
+    
+    #myname{
+        padding: calc(100vh/2.75) calc(100vw/22) calc(100vh/4);
+    }
+    
+    #hey{
+        font-size:3rem;
+    }
+    #name{
+        font-size:5rem;
+    }
+    .me h2{
+        font-family: 'Work Sans', sans-serif !important;
+        font-size:3rem !important;
+        font-weight: 800 !important;
+        color: rgb(7,106,121) !important;
+        margin-top:110px !important;
+        margin-left: 60px;
+    }
+    #carouselContent{
+        margin-top:80px !important;
+        margin-left:60px;
+        margin-right: 40px;
+    }
+    .caraousel-item{
+        width:120px !important;
+    } 
+    .carousel-item p{
+        font-size: 1.3rem !important;
+        color:rgb(7,106,121);
+    }
+    #intropara{    
+        margin-top: -46px !important;
+        font-size: 1.3rem !important;
+        color:rgb(124, 122, 122);
+    }
+    .carousel-item, .carousel-inner{
+        width:100% !important;
+    }
 }
 
-/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
     .navbar-brand{
         margin-left: -80px !important;
     }
-    #row1{
-        margin-top: 0;
-    }
-    .container .row .col-10 p{
-        font-size:2.1rem;
-       
+    .caption p{
+        font-size:2.1rem;       
         margin-left: calc(100vw/50);
         margin-bottom: 0px;
+    }
+    .caption{
+        top:27%;
     }
     #knowmore{
         font-size:80%;
@@ -354,6 +512,25 @@ video::after{
         width: 15px;
     
     }
+    
+    #myname{
+        padding: calc(100vh/2.75) calc(100vw/22) calc(100vh/4);
+    }
+    
+    #hey{
+        font-size:3.2rem;
+    }
+    #name{
+        font-size:6.5rem;
+    }
+    .me h2{
+        font-family: 'Work Sans', sans-serif !important;
+        font-size:3.2rem !important;
+        font-weight: 800 !important;
+        color: rgb(7,106,121) !important;
+        margin-top:130px !important;
+        margin-left:75px;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -361,12 +538,54 @@ video::after{
     .navbar-brand{
         margin-left:0 !important;
     }
-    #row1{
-        margin-top: 0;
-    }
-    .caption .row .col-10 p{
+    .caption p{
         font-size:2.5rem;        
         margin-bottom: 0px;
+    }
+    
+    #myname{
+        padding: calc(100vh/2.75) calc(100vw/22) calc(100vh/4);
+    }
+    
+    #hey{
+        font-size:3rem;
+    }
+    .me h2{
+        font-family: 'Work Sans', sans-serif !important;
+        font-size:3rem !important;
+        font-weight: 800 !important;
+        color: rgb(7,106,121) !important;
+        margin-top:170px !important;
+        margin-left: 70px !important;
+    }
+    #carouselContent{
+        margin-top:80px !important;
+        margin-left:70px;
+        margin-right: 40px;
+    }
+    .caraousel-item{
+        width:120px !important;
+    } 
+    .carousel-item p{
+        font-size: 1.2rem !important;
+        color:rgb(7,106,121);
+    }
+    #intropara{    
+        margin-top: -44px !important;
+        font-size: 1.2rem !important;
+        color:rgb(124, 122, 122);
+    }
+    .carousel-item, .carousel-inner{
+        width:100% !important;
+    }
+    
+    #myimage2{
+        width: 360px;
+        height:550px;
+    }
+    #myimage3{
+        width: 280px;
+        height:450px;
     }
 }
 

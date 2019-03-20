@@ -1,8 +1,4 @@
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(150).fadeIn(300);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(150).fadeOut(300);
-});
+
 
 $(document).ready(function(){
 	$('.nav-link').click( function(e) {
@@ -13,8 +9,18 @@ $(document).ready(function(){
 			scrollTop:$(li).offset().top
 			},1250);
 		});
+		AOS.init({
+			duration: 1500,
+		});
+
+		$('ul.nav li.dropdown').hover(function() {
+			$(this).find('.dropdown-menu').stop(true, true).delay(150).fadeIn(300);
+		}, function() {
+			$(this).find('.dropdown-menu').stop(true, true).delay(150).fadeOut(300);
+		});
 });
 
-AOS.init({
-	duration: 1800,
-});
+
+$(document).ready(function(){
+	
+})
