@@ -366,7 +366,7 @@
         font-size:2.5rem;
     }
     #name{
-        font-size:calc(100vw/60) !important;
+        font-size:calc(100vw/35) !important;
     }
     .me h2{
         font-family: 'Work Sans', sans-serif !important;
