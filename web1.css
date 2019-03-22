@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,800');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:500,800');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
-
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
 #body{
     overflow: hidden;
     margin-right: 0px !important;
@@ -22,7 +22,7 @@
 }
 .nav-item{
     font-weight: 200!important;
-    margin-left:calc(100vw/55)!important;
+    margin-left:calc(100vw/100)!important;
     padding: 0 10px !important;
     border-bottom: 2px solid rgba(0,0,0,0) !important;
 }
@@ -223,7 +223,6 @@
     font-weight: 800 !important;
     color: rgb(7,106,121) !important;
     margin-top:170px !important;
-    margin-left:120px !important;
     text-shadow: 2px -4px 8px rgba(0,0,0,0.5);
 }
 #carouselContent{
@@ -316,7 +315,88 @@
     right: 0;
 }
 
+#port h2{
+    color: #EEC848 !important;
+    margin-top:80px !important;
+    margin-bottom:20px;
+    text-align:center !important;
+}
 
+#port-line{
+    
+    background-color:#EEC848;   
+    height:0.4rem;
+    width:6rem;
+    margin: 20px auto;
+    
+}
+
+.swiper-slide{
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.text{
+    position: absolute;  
+    width:inherit;
+    height: inherit;
+    text-align: center;
+    padding:30px;
+    padding-top: 40%;
+    display: none;
+    transition: .5s ease;
+    
+}
+
+.swiper-slide:hover .text{    
+    background: #262626;
+    opacity: 0.7;
+    display: block;
+}
+.swiper-slide:active .text{    
+    background: #262626;
+    opacity: 0.7;
+    display: block;
+}
+
+.text .img-box-head{
+    font-size:45px !important;
+    font-weight: bold;
+}
+
+.text p{
+    line-height: 180%;
+    margin-top:30px;
+    font-size:20px !important;
+}
+.text p b{
+    color:rgb(255, 187, 0);
+    font-weight:bolder;     
+}
+
+.pro{
+    margin-left:0px !important;
+    text-shadow: 15px 20px 11px #262626 !important;
+}
+
+.mb-3{
+    box-shadow: 11px 10px 52px -1px rgba(0,0,0,0.75);
+}
+.card-btn button{
+    background:rgb(255,187,0);
+    border:none;
+    border-radius:0;
+    padding:7px 20px;
+}
+
+#img-quote{
+    font-weight: bold;
+    text-shadow: 15px 20px 11px #262626 !important;
+    color: #F1443E;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size:60px;
+    text-align: center;
+}
 @media (max-width: 575.98px) {
     .navbar-brand{
         margin:auto !important;
@@ -376,6 +456,9 @@
         margin-top:100px !important;
         margin-left:auto;
     }
+    .pro{
+        margin-left:0px !important;
+    }
     #carouselContent{
         margin-top:80px !important;
         margin-left:60px;
@@ -396,6 +479,20 @@
     .carousel-item, .carousel-inner{
         width:100% !important;
     }
+    .swiper-slide{
+        width:420px;
+        height:580px;
+    }
+    #port h2{
+        margin: 80px auto !important;
+        margin-bottom:20px !important;
+    }
+    #port-line{
+        margin: 20px auto;
+    }
+    #img-quote{
+        font-size:30px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -406,7 +503,7 @@
         margin:auto!important;
     }
     .caption{
-        top:32%;
+        top:36%;
     }
     .caption p{
         font-size:1.7rem;
@@ -455,6 +552,9 @@
         margin-top:110px !important;
         margin-left: 60px;
     }
+    .pro{
+        margin-left:0px !important;
+    }
     #carouselContent{
         margin-top:80px !important;
         margin-left:60px;
@@ -475,11 +575,20 @@
     .carousel-item, .carousel-inner{
         width:100% !important;
     }
+    #img-quote{
+        font-size:40px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .navbar-brand{
-        margin-left: -80px !important;
+        margin-left: -76px !important;
+    }
+    .nav-item{
+        margin-left:calc(100vw/10000) !important;
+    }
+    .form-inline{
+        margin-left:calc(100vw/10000) !important;
     }
     .caption p{
         font-size:2.1rem;       
@@ -531,6 +640,9 @@
         margin-top:130px !important;
         margin-left:75px;
     }
+    .pro{
+        margin-left:0px !important;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -556,7 +668,10 @@
         font-weight: 800 !important;
         color: rgb(7,106,121) !important;
         margin-top:170px !important;
-        margin-left: 70px !important;
+        margin-left: 70px;
+    }
+    .pro{
+        margin-left:0px !important;
     }
     #carouselContent{
         margin-top:80px !important;

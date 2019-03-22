@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<script type="text/javascript">
+window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+	{   animationEnabled: "true",
+        backgroundColor: " #262626" ,
+		title: {
+			text: ""
+		},
+		axisX: {
+            valueFormatString:"#######",		       
+			lineDashType: "",
+			lineThickness: 2,
+            lineColor: "#262626",
+            labelFontColor: "#262626",
+            tickLength: 0,
+            interval: 10
+		},
+		axisY: {
+			gridThickness: 0,
+          lineColor: "#262626",
+          labelFontColor: "#262626",
+          tickLength: 0
+		},
+		data: [
+        {   
+            toolTip: {
+			    shared: true,
+		    	contentFormatter: function (e) {
+				    var content = " ";
+			    	for (var i = 0; i < e.entries.length; i++) {
+					    content += e.entries[i].dataPoint.label + " " + "<strong>" + e.entries[i].dataPoint.z + "</strong>";
+					    content += "<br/>";
+				    }
+				    return content;
+			    }
+            },
+            zValueFormatString: "##.#0 mm",
+            indexLabelPlacement: "outside",
+            lineThickness:5,
+            lineColor:"whitesmoke",
+            explodeOnClick: true, 
+		    indexLabel: "{x}, {none}",
+            indexLabelFontSize: 15,
+            indexLabelFontColor: "#EEC848",
+			type: "line",
+			dataPoints: [
+            {  label: "Graphicpro", y: 150,  z: "tekhin1.ml", indexLabel: "Graphicpro", markerColor: "rgb(180, 180, 180)", markerType: "circle",markerSize:23},
+			{  label: "tekhin1.ml", y: 250, indexLabel: "tekhin1.ml",markerColor: "rgb(180, 180, 180)", markerType: "circle" ,markerSize:23},
+			{  label: "tekhin1.ml/gallery1.php", y: 200, indexLabel: "tekhin1.ml/gallery1.php", markerColor: "rgb(180, 180, 180)", markerType: "circle" ,markerSize:23},
+			{ label: "imun.netlify.com", y: 350, indexLabel: "imun.netlify.com",markerColor: "rgb(180, 180, 180)", markerType: "circle"  ,markerSize:23},
+			{ label: "hyperloo.github.io/website/", y: 50, indexLabel: "hyperloo.github.io/website/", markerColor: "rgb(180, 180, 180)", markerType: "circle"  ,markerSize:23}
+			]
+		}
+		]          
+	});
+	chart.render();
+}
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+<div id="chartContainer" style="height: 100%; width: 100%;"></div>
+</body>
+</html>
+<!--yvalue formatting string-->
