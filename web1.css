@@ -341,8 +341,8 @@
     width:inherit;
     height: inherit;
     text-align: center;
-    padding:30px;
-    padding-top: 40%;
+    padding:60px;
+    padding-top: 30%;
     display: none;
     transition: .5s ease;
     
@@ -376,7 +376,7 @@
 
 .pro{
     margin-left:0px !important;
-    text-shadow: 15px 20px 11px #262626 !important;
+    
 }
 
 .mb-3{
@@ -397,6 +397,87 @@
     font-size:60px;
     text-align: center;
 }
+
+#contact-img{
+    width:450px;
+    height: 600px;
+    margin-left:-200px;
+    margin-top: 40%;
+}
+
+#contact div div h2{
+    margin-top:20% !important;
+    color: #fff !important;
+    margin-bottom: 0px !important;
+}
+
+.contact-us{
+    margin-top: 0px !important;
+    width: 400px;
+    background:#285352;
+    padding: auto;
+    text-align: center;
+    border: none;
+    position: relative;
+    
+  }
+
+  .form,
+  .form-items{
+    width: 100%;
+  }
+  
+  .form-items .input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background: #285352;
+    color:white;
+    border: 0px;
+    outline: none;
+    border-radius: 0;
+    border-bottom:1px solid white;
+  }
+  
+
+  .form-items .input.message{
+    height: 125px;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    resize: none;
+    border-bottom:1px solid white;
+  }
+  
+  .btna{
+    background:rgb(255,187,0);
+    text-align: center;
+    color: #285352;
+    padding: 12px;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  .btna .fas{
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  
+  .form-items{
+    position: relative;
+  }
+  
+  .form-items .fas{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #9a99aa;
+  }
+  
+  .contact-us{
+      margin-top:-400px;
+  }
+  
 @media (max-width: 575.98px) {
     .navbar-brand{
         margin:auto !important;
@@ -483,6 +564,11 @@
         width:420px;
         height:580px;
     }
+    .text{
+        background: #262626;
+        opacity: 0.7;
+        display: block;
+    }
     #port h2{
         margin: 80px auto !important;
         margin-bottom:20px !important;
@@ -492,6 +578,9 @@
     }
     #img-quote{
         font-size:30px;
+    }
+    .con{
+        margin:auto !important;
     }
 }
 
@@ -554,6 +643,11 @@
     }
     .pro{
         margin-left:0px !important;
+    }
+    .text{
+        display: block;
+        background: #262626;
+        opacity: 0.7;
     }
     #carouselContent{
         margin-top:80px !important;
@@ -701,6 +795,10 @@
     #myimage3{
         width: 280px;
         height:450px;
+    }
+    #contact-img{
+        width:400px;
+        height:500px;
     }
 }
 
