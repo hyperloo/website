@@ -475,7 +475,11 @@
   }
   
   .contact-us{
-      margin-top:-400px;
+    margin-top:-400px;
+  }
+
+  .form:hover, .form:active, .btna:hover{
+    box-shadow: 0px 2px 20px 4px rgba(0,0,0,0.5);
   }
   
 @media (max-width: 575.98px) {
@@ -535,7 +539,7 @@
         font-weight: 800 !important;
         color: rgb(7,106,121) !important;
         margin-top:100px !important;
-        margin-left:auto;
+        margin-left: calc(100vw/5) !important;
     }
     .pro{
         margin-left:0px !important;
@@ -579,15 +583,20 @@
     #img-quote{
         font-size:30px;
     }
-    .con{
-        margin:auto !important;
-    }
     .contact-us{
         margin-top: 0px !important;
-        width: 300px;
-    }
-    .contact{
         text-align: center;
+        width: calc(100vw/1.5);
+    }
+    .con{
+        text-align: center !important;
+    }
+    .form{
+        margin-left: calc(100vw/7) !important;
+    }
+    .btna{
+        margin-left: calc(100vw/7) !important;
+        width: calc(100vw/1.5);
     }
 }
 
@@ -679,6 +688,21 @@
     #img-quote{
         font-size:40px;
     }
+    .contact-us{
+        margin-top: 0px !important;
+        text-align: center;
+        width: calc(100vw/1.5);
+    }
+    .con{
+        text-align: center !important;
+    }
+    .form{
+        margin-left: calc(100vw/7) !important;
+    }
+    .btna{
+        margin-left: calc(100vw/7) !important;
+        width: calc(100vw/1.5);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -743,6 +767,21 @@
     }
     .pro{
         margin-left:0px !important;
+    }
+    .contact-us{
+        margin-top: 0px !important;
+        text-align: center;
+        width: calc(100vw/1.5);
+    }
+    .con{
+        text-align: center !important;
+    }
+    .form{
+        margin-left: calc(100vw/7) !important;
+    }
+    .btna{
+        margin-left: calc(100vw/7) !important;
+        width: calc(100vw/1.5);
     }
 }
 
