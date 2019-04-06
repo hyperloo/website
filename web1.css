@@ -343,9 +343,8 @@
     text-align: center;
     padding:60px;
     padding-top: 30%;
-    display: none;
-    transition: .5s ease;
-    
+    display: none; 
+    transition: all 0.3s linear;
 }
 
 .swiper-slide:hover .text{    
@@ -478,9 +477,6 @@
     margin-top:-400px;
   }
 
-  .form:hover, .form:active, .btna:hover{
-    box-shadow: 0px 2px 20px 4px rgba(0,0,0,0.5);
-  }
   
 @media (max-width: 575.98px) {
     .navbar-brand{
@@ -565,14 +561,24 @@
         width:100% !important;
     }
     .swiper-slide{
-        width:420px;
-        height:580px;
+        width:400px;
+        height:80vh;
     }
     .text{
         background: #262626;
         opacity: 0.7;
         display: block;
     }
+    .text p{
+        line-height: 180%;
+        margin-top:30px;
+        font-size:17px !important;
+    }    
+    .pro{
+        margin-left:0px !important;
+        
+    }
+    
     #port h2{
         margin: 80px auto !important;
         margin-bottom:20px !important;
@@ -586,11 +592,20 @@
     .contact-us{
         margin-top: 0px !important;
         text-align: center;
+        width: 100vw !important;
     }
     .con{
         text-align: center !important;
     }
-    
+    .form{
+        width: 100vw !important;
+    }
+    .btna{
+        width: 100vw;
+    }
+    .con h2{
+        margin-left: 0px !important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
