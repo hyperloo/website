@@ -582,6 +582,11 @@
     .con{
         margin:auto !important;
     }
+    .contact-us{
+    margin-top: 0px !important;
+    width: 300px;
+    
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
