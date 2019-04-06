@@ -586,18 +586,11 @@
     .contact-us{
         margin-top: 0px !important;
         text-align: center;
-        width: calc(100vw/1.5);
     }
     .con{
         text-align: center !important;
     }
-    .form{
-        margin-left: calc(100vw/7) !important;
-    }
-    .btna{
-        margin-left: calc(100vw/7) !important;
-        width: calc(100vw/1.5);
-    }
+    
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
