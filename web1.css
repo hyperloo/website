@@ -506,7 +506,17 @@
     margin-top:-400px;
   }
 
+  .con-icon{
+      background: #262626;
+  }
   
+  .ic{
+      padding: auto !important;
+  }
+
+  .icons:hover{
+      color: #f6d04f;
+  }
 @media (max-width: 575.98px) {
     .navbar-brand{
         margin:auto !important;
