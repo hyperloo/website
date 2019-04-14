@@ -12,6 +12,7 @@
     background: #4a484b url(images/block.gif);
     background-repeat: no-repeat;
     background-position: center;
+    z-index:99999;
 }
 #home nav a h2{
     text-transform:lowercase;
