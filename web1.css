@@ -16,8 +16,6 @@
     background-color: #333	;
     z-index: 100000;
   }
-  .secretpopout { display: none; }
-  
   .pre-container {
     position: absolute;
     left: 50%;
@@ -203,22 +201,24 @@
 
 .caption .btn button{
     z-index: 100;    
-    padding:12px 15px;
-    background: darkturquoise;
-    color: white;
-    font-family:'Fredericka the Great', cursive;
-    font-weight: bold;
-    border:2px solid darkturquoise;
+    padding:12px 15px !important;
+    background: #F1443E !important;
+    color: white !important;
+    font-family:'Fredericka the Great', cursive !important;
+    font-weight: bold !important;
+    border:2px solid #F1443E !important;
     -webkit-box-shadow: 11px 10px 52px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 11px 10px 52px -1px rgba(0,0,0,0.75);
     box-shadow: 11px 10px 52px -1px rgba(0,0,0,0.75);
     margin-top:30px !important;
+    border-radius:0 !important;
 }
 
-.caption .btn button:hover{
-    padding:11px 14px;
-}
+.caption .btn button::before{
+    border-radius:0px !important;
+    border:10px solid #285352 !important;
 
+}
 .chevron.bottom:before {
     top: 0;
     -webkit-transform: rotate(135deg);
@@ -234,16 +234,16 @@
 }
 .chevron::before {
     border-style: solid;
-    border-width: 0.3em 0.3em 0 0;
+    border-width: 0.4em 0.4em 0 0;
     content: '';
     display: inline-block;
-    height: 20px;
+    height: 30px;
     position: relative;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     vertical-align: top;
-    width: 20px;
+    width: 30px;
 
 }
 
@@ -501,6 +501,44 @@
     text-align: center;
 }
 
+
+#galbtn{
+    background: #F1443E;
+    padding: 7px 20px !important;
+    color:white;
+    border-radius:35px;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: color 1000ms;
+    transition: color 1000ms;
+    -webkit-tap-highlight-color: transparent;
+}    
+#galbtn::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius:35px;
+    border:2px solid #285352;
+    background: #285352;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}    
+#galbtn:hover:before{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
 #contact-img{
     width:450px;
     height: 600px;
@@ -625,14 +663,14 @@
         margin-left: calc(100vw/28);
         margin-bottom: 0px;
     }
-    #knowmore{
+    .knowmore{
         font-size:55%;
         text-align:center;
     }
-    #knowmore button{
+    .knowmore button{
         padding: 4px;
     }
-    #knowmore .chevron{
+    .knowmore .chevron{
         margin: 4px !important;
         display: block;
         animation: pulse 3s infinite;
@@ -767,14 +805,14 @@
         margin-left: calc(100vw/28);
         margin-bottom: 0px;
     }
-    #knowmore{
+    .knowmore{
         font-size:55%;
         text-align:center;
     }
-    #knowmore button{
+    .knowmore button{
         padding: 4px;
     }
-    #knowmore .chevron{
+    .knowmore .chevron{
         margin: 4px !important;
         display: block;
         animation: pulse 3s infinite;
@@ -909,11 +947,11 @@
         margin-left: auto;
         margin-bottom:px;
     }
-    #knowmore{
+    .knowmore{
         font-size:70%;
         text-align:center;
     }
-    #knowmore .chevron{
+    .knowmore .chevron{
         margin:6px !important;
         display: block;
         animation: pulse 3s infinite;
@@ -1029,11 +1067,11 @@
     .caption{
         top:27%;
     }
-    #knowmore{
+    .knowmore{
         font-size:80%;
         text-align:center;
     }
-    #knowmore .chevron{
+    .knowmore .chevron{
         margin:4px !important;
         display: block;
         animation: pulse 3s infinite;
