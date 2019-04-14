@@ -6,7 +6,13 @@
     overflow: hidden;
     margin-right: 0px !important;
 }
-
+#loader{
+    height:100vh;
+    width:100%;
+    background: #1e2835 url(images/block.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #home nav a h2{
     text-transform:lowercase;
     font-weight:bolder;
