@@ -6,6 +6,7 @@
     overflow: hidden;
     margin-right: 0px !important;
 }
+
 #home nav a h2{
     text-transform:lowercase;
     font-weight:bolder;
@@ -334,6 +335,7 @@
 .swiper-slide{
     transition: .5s ease;
     backface-visibility: hidden;
+   
 }
 
 .text{
@@ -345,6 +347,7 @@
     padding-top: 30%;
     transition: .5s ease;
     transition-delay: 0.5s;
+    flex-wrap: wrap !important;
 }
 
 .swiper-slide:hover .text{    
@@ -378,7 +381,6 @@
 
 .text p{
     opacity: 0 !important;
-    font-size: 0px;
     line-height: 180%;
     margin-top:30px;
     font-size:20px !important;
@@ -530,7 +532,154 @@
     color:rgb(198, 197, 194);
 }
 
-@media (max-width: 575.98px) {
+@media (max-width:374.98px){
+    .navbar-brand{
+        
+        margin:auto !important;
+    }
+    .navbar-brand h2
+    {   
+        font-size:120% !important;
+    }
+    .nav-item{
+        margin: auto !important;
+    }
+    .caption{
+        top:45%;
+    }
+    .caption p{
+        font-size:1.5rem;
+        margin-left: calc(100vw/28);
+        margin-bottom: 0px;
+    }
+    #knowmore{
+        font-size:55%;
+        text-align:center;
+    }
+    #knowmore button{
+        padding: 4px;
+    }
+    #knowmore .chevron{
+        margin: 4px !important;
+        display: block;
+        animation: pulse 3s infinite;
+    }
+    .chevron::before {
+        border-style: solid;
+        border-width: 0.18em 0.18em 0 0;
+        content: '';
+        display: inline-block;
+        height: 15px;
+        position: relative;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        vertical-align: top;
+        width: 15px;
+    
+    }
+    #myname{
+        padding: calc(100vh/2.75) calc(100vw/22) calc(100vh/3.8);
+    }
+    
+    #hey{
+        font-size:2.5rem;
+    }
+    #name{
+        font-size:calc(100vw/7.5) !important;
+    }
+    .me h2{
+        font-family: 'Work Sans', sans-serif !important;
+        font-size:2.5rem !important;
+        font-weight: 800 !important;
+        color: rgb(7,106,121) !important;
+        margin-top:100px !important;
+        margin-left: calc(100vw/5) !important;
+    }
+    .pro{
+        margin-left:0px !important;
+    }
+    #carouselContent{
+        margin-top:80px !important;
+        margin-left:60px;
+        margin-right: 40px;
+    }
+    .caraousel-item{
+        width:120px !important;
+    } 
+    .carousel-item p{
+        font-size: 1rem !important;
+        color:rgb(7,106,121);
+    }
+    #intropara{    
+        margin-top: -40px !important;
+        font-size: 1rem !important;
+        color:rgb(124, 122, 122);
+    }
+    .carousel-item, .carousel-inner{
+        width:100% !important;
+    }
+    .swiper-slide{
+        width:400px;
+        height:80vh;
+    }
+    .text{
+        background: #262626;
+        opacity: 0.7;
+        display: block;
+    }
+    .text p{
+        line-height: 180%;
+        margin-top:30px;
+        font-size:16px !important;
+    }    
+    .pro{
+        margin-left:0px !important;
+        
+    }
+    
+    #port h2{
+        margin: 80px auto !important;
+        margin-bottom:20px !important;
+    }
+    #port-line{
+        margin: 20px auto;
+    }
+    #img-quote{
+        font-size:30px;
+    }
+    .contact-us{
+        margin-top: 0px !important;
+        text-align: center;
+        width: 100vw !important;
+    }
+    .con{
+        text-align: center !important;
+    }
+    .form{
+        width: 100vw !important;
+    }
+    .btna{
+        width: 100vw;
+    }
+    .con h2{
+        margin-left: 0px !important;
+    }
+    .icp b{  
+        
+        display: none !important;
+        color:transparent;            
+        text-decoration: none;
+        font-weight: normal !important; 
+    }
+    .icp:hover b{
+        display: flex !important;
+        color:rgb(198, 197, 194);
+    }
+    
+}
+
+@media (min-width:375px) and (max-width: 575.98px) {
     .navbar-brand{
         margin:auto !important;
     }
