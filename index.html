@@ -33,8 +33,16 @@
     }
   </style>
 </head>
-<body onload="myFunction()">
-    
+<body>
+      <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
     <div id="home">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
           <div class="container">
@@ -403,7 +411,13 @@
   <script src="js/swiper.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
-    
+    $(window).on('load', function() {
+      $('#preloader').delay(200).fadeOut('slow');
+      $('body').delay(200).css({
+        'overflow': 'visible'
+      });
+    });
+
     var swiper = new Swiper('.swiper-container',{
       effect: 'coverflow',
       grabCursor: true,
