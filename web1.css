@@ -24,7 +24,7 @@
 .btn:focus{
     box-shadow: none !important;
     outline: none;
-    
+
 }
 .nav-item{
     font-weight: 200!important;
@@ -217,7 +217,7 @@
     font-size:26px;
 }
 #myimage1{
-    background: url("images/img1.jpg");
+    background: url("images/img1.webp");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
