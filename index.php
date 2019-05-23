@@ -1,3 +1,9 @@
+<?php
+
+    include('save.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -162,7 +168,7 @@
                                         passionate about coding, currently doing Web Development and Web Designing.<br> Worked on 
                                         several projects including coding and Web Development.
                                     </p>
-                                    <a href="images/resume.pdf" class="px-0" id="resume" target="_blank">
+                                    <a href="#" class="px-0" id="resume">
                                         <button data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="100"><span>View Resume</span></button>
                                     </a>
                                 </div>   
@@ -291,14 +297,14 @@
                   <div class="card-inner">
                     <div class="row no-gutters">
                       <div class="col-md-12">
-                        <img src="images/brij.png" class="card-img" alt="Homepage">
+                        <img src="images/brij.webp" class="card-img" alt="Homepage">
                       </div>
                       <div class="col-md-12">
                         <div class="card-body">
-                          <h5 class="card-title">brijdentalclinic.netlify.com</h5>
+                          <h5 class="card-title">hyperloo.github.io/brij/</h5>
                           <p class="card-text">Brij Dental Clinic's Website Homepage Assignment<br></p>
                           <p class="card-text"><small class="text-muted">Duration:- May 2019</small></p>
-                          <a class="btn px-0 text-left card-btn" href="https://brijdentalclinic.netlify.com" target="_blank"><button>Watch It</button></a>
+                          <a class="btn px-0 text-left card-btn" href="https://hyperloo.github.io/brij" target="_blank"><button>Watch It</button></a>
                           
                         </div>
                       </div>
@@ -353,7 +359,7 @@
       </div>
      
   </div>
-  <div id="gallery" style="background: url(images/img10.webp), url(images/img12.webp); background-blend-mode:color; background-position: center;">
+  <div id="gallery" style="background: url(images/img10.webp), url(images/img12.jpg); background-blend-mode:color; background-position: center;">
       <div class="container-fluid">
         <div class="row mx-0">
             <div class="col-12 text-center mx-0 me" id="port" data-aos="flip-right"><h2 class="pro" style="color: rgb(243, 172, 18) !important; text-shadow: 15px 20px 11px #262626 !important;">GALLERY</h2></div>
@@ -386,7 +392,7 @@
                 </div>
               
                 <div class="btna input-group">
-                  <button type="submit" name="save" class="Save">
+                  <button type="submit" name="save" class="Save" style="background:transparent; border:none; align-content: center;">
                     Post It
                     <i class="fas fa-arrow-right"></i>
                   </button>
